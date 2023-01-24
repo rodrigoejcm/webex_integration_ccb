@@ -1,14 +1,26 @@
 <html>
+  <style>
+    body{
+        margin: 0; /* Remove default margin */
+    }
+    iframe{      
+        display: block;  /* iframes are inline by default */   
+        height: 100vh;  /* Set height to 100% of the viewport height */   
+        width: 100vw;  /* Set width to 100% of the viewport width */     
+        border: none; /* Remove default border */
+        background: lightyellow; /* Just for styling */
+    }
+</style>
 <head>
   <title>Conceptboard</title>
   <script src="https://binaries.webex.com/static-content-pipeline/webex-embedded-app/v1/webex-embedded-app-sdk.js" defer></script>
   <script src="./index.js" defer></script>
 </head>
 <body>
-    <h1>Embedded App Quick Start</h1>
-    <p>This is the initiator app. Its job is to specify a URL to share. Click <b>Set Share URL</b>, then click either <b>Open for all</b> (when running in a meeting) or <b>Add to tab</b> (when running in a space).</p>
+   
+    <iframe src="https://app.conceptboard.com/boards#" frameborder="0"></iframe>
+   
     <button onclick="handleSetShare()">Set Share URL</button>
-    <h2>Event Log</h2>
-    <ul id="console" />
+   
 </body>
 </html>
