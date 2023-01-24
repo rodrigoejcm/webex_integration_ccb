@@ -13,7 +13,7 @@ function handleSetShare() {
     // Replace this with the URL of your shared page
     var url = "https://app.conceptboard.com/boards#"
     // "Shared App" is the title of the window or tab that will be created
-    app.setShareUrl(url, "", "Shared App").then(() => {
+    app.setShareUrl(url, "", "Shared Conceptboard").then(() => {
         log("Set share URL", url);
     }).catch((errorcode) => {
         log("Error: ", Webex.Application.ErrorCodes[errorcode])
