@@ -1,5 +1,3 @@
-
-
 // Create a new Webex app instance
 var app = new window.Webex.Application();
 
@@ -9,6 +7,7 @@ app.onReady().then(() => {
 }).catch((errorcode) =>  {
     log("Error with code: ", Webex.Application.ErrorCodes[errorcode])
 });
+
 
 
 
