@@ -1,24 +1,12 @@
-// Create a new Webex app instance
-var app = new window.Webex.Application();
 
-// Wait for onReady() promise to fulfill before using framework
-app.onReady().then(() => {
-    log("App ready. Instance", app);
-}).catch((errorcode) =>  {
-    log("Error with code: ", Webex.Application.ErrorCodes[errorcode])
-});
 
-// Button click handler to set share URL
-function handleSetShare() {
-    // Replace this with the URL of your shared page
-    var url = "https://app.conceptboard.com/boards#"
-    // "Shared App" is the title of the window or tab that will be created
-    app.setShareUrl(url, "", "Shared Conceptboard").then(() => {
-        log("Set share URL", url);
-    }).catch((errorcode) => {
-        log("Error: ", Webex.Application.ErrorCodes[errorcode])
-    });
+function openConceptboardUrl(){
+    var boardURL = document.getElementById("boardLink").value;
+    console.log(boardURL);
+    sessionStorage.setItem("board_url", boardURL);
+    window.location.href = 'index_frame.html';
 }
+
 
 // Utility function to log app messages
 function log(type, data) {

@@ -1,27 +1,26 @@
 <html>
   <style>
-    body{
-        margin: 0; /* Remove default margin */
-    }
-    iframe{      
-        display: block;  /* iframes are inline by default */   
-        height: 95vh;  /* Set height to 100% of the viewport height */   
-        width: 100vw;  /* Set width to 100% of the viewport width */     
-        border: none; /* Remove default border */
-        background: lightyellow; /* Just for styling */
-    }
+    
+    
 </style>
 <head>
   <title>Conceptboard</title>
+  <link rel="stylesheet" href="style.css">
   <script src="https://binaries.webex.com/static-content-pipeline/webex-embedded-app/v1/webex-embedded-app-sdk.js" defer></script>
   <script src="./index.js" defer></script>
 </head>
 <body>
    
-  <iframe class="conf-macro output-block" data-hasbody="false" data-local-id="8b54f821-5a30-4e4b-a3f7-db3cb88f3527" data-macro-id="463f2c01682614890e62962e1e101ad3" data-macro-name="iframe" frameborder="0" sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation" src="https://app.conceptboard.com/board/fioe-abde-ua4c-94z8-kixo">
-  </iframe>
-   
-    <button onclick="handleSetShare()">Set Share URL</button>
+ <div class="header">
+    <img src="Conceptboard_Logo_white.png" alt="Conceptboard Logo" class="logo">
+    <p class="text_collaboration" > Visual Collaboration for Webex</p>
+ </div>
+ <div class="form">
+    <form action="">
+      <input type="text" placeholder="Board Link" id="boardLink">
+      <input type="button" name="submit" value="Open Board" onclick="openConceptboardUrl()" />
+    </form>
+ </div>
    
 </body>
 </html>

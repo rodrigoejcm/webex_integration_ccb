@@ -1,0 +1,88 @@
+body{
+    margin: 0; /* Remove default margin */
+}
+
+iframe{      
+    display: block;  /* iframes are inline by default */   
+    height: 95vh;  /* Set height to 100% of the viewport height */   
+    width: 100vw;  /* Set width to 100% of the viewport width */     
+    border: none; /* Remove default border */
+    background: lightyellow; /* Just for styling */
+}
+
+.header{
+    padding-top: 60px;
+    background-color:#107fc9;
+    width: 100vw;
+    height: 30vh;
+}
+
+.header .logo {
+    width: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header .text_collaboration {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
+    font-size: 20px;
+    line-height: 18px;
+    color:white;
+}
+
+
+.form{
+    padding-top: 60px;;
+    background-color: white;
+    width: 100vw;
+    height: 70vh;
+}
+
+input,
+select,
+textarea {
+  border: 2px solid #333;
+  background-color: white;
+  border-radius: 0.25rem;
+}
+
+input[type="text"],
+select,
+textarea {
+  font: 1.25rem / 1.5 sans-serif;
+  display: block;
+  box-sizing: border-box;
+  width: 40%;
+  padding: 0.5rem 0.75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type="button"]{
+    margin-top: 20px;
+    font: 1.25rem / 1.5 sans-serif;
+    display: block;
+    box-sizing: border-box;
+    width: 20%;
+    padding: 0.5rem 0.75rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #107fc9;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    color: white;
+    border: none;
+  }
+
+.footer{
+    background-color: #107fc9;
+    height: 5vh;
+    position: absolute; 
+    left: 0 ; right: 0; bottom: 0; 
+}
