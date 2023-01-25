@@ -42,6 +42,12 @@ iframe{
     background-color: white;
 }
 
+#conceptboard_iframe{
+    width: 100%;
+    height: 100%;
+
+}
+
 input,
 select,
 textarea {
