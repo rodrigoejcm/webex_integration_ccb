@@ -12,19 +12,13 @@
 </head>
 <body>
 
-<iframe src="https://app.conceptboard.com/embedded/config/msteams?embed=msteams" frameborder="0"></iframe>
+<iframe id="conceptboard_iframe" src="https://app.conceptboard.com/embedded/config/msteams?embed=msteams" frameborder="0">
+
+</iframe>
   
-   
- <div class="header">
-    <img src="Conceptboard_Logo_white.png" alt="Conceptboard Logo" class="logo">
-    <p class="text_collaboration" > Visual Collaboration for Webex</p>
- </div>
- <div class="form">
-    <form action="">
-      <input type="text" placeholder="Board Link" id="boardLink">
-      <input type="button" name="submit" value="Open Board" onclick="openConceptboardUrl()" />
-    </form>
- </div>
+<div class="footer">
+  <input type="button" value="Open Board" onclick="handleSetShare()"/>
+</div>
    
 </body>
 </html>

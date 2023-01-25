@@ -10,14 +10,14 @@ app.onReady().then(() => {
 
 window.onload = function(event) {
     console.log("page loaded");
-    document.getElementById("conceptboard_iframe").addEventListener('load',  iframeLoad(), false);
+    document.getElementById("conceptboard_iframe").addEventListener('load',  iframeLoad(), false)
 };
 
 
 
 function iframeLoad(){
     console.log("session  ", sessionStorage.getItem("board_url"));
-    document.getElementById("conceptboard_iframe").data = sessionStorage.getItem("board_url") ;
+    document.getElementById("conceptboard_iframe").src = sessionStorage.getItem("board_url") ;
 }
 
 // Button click handler to set share URL
