@@ -17,7 +17,7 @@ window.onload = function(event) {
 
 function iframeLoad(){
     console.log("session  ", sessionStorage.getItem("board_url"));
-    document.getElementById("conceptboard_iframe").data = sessionStorage.getItem("board_url") ;
+    document.getElementById("conceptboard_iframe").src = sessionStorage.getItem("board_url") ;
 }
 
 // Button click handler to set share URL
