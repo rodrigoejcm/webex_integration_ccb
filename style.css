@@ -1,5 +1,6 @@
 body{
     margin: 0; /* Remove default margin */
+    height: 100vh;
 }
 
 iframe{      
