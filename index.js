@@ -5,11 +5,18 @@ var app = new window.Webex.Application();
 app.onReady().then(() => {
     log("App ready. Instance", app);
     console.log(app.context);
+ 
     if (app.isShared) {
         document.getElementById("footer").style.display = "none";
     }
 }).catch((errorcode) =>  {
     log("Error with code: ", Webex.Application.ErrorCodes[errorcode])
+});
+
+cookieStore.addEventListener('change', ({changed}) => {
+    for (const {name, value} of changed) {
+        console.log(`${name} was set to ${value}`);
+    }
 });
 
 
