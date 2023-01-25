@@ -10,12 +10,7 @@ app.onReady().then(() => {
     log("Error with code: ", Webex.Application.ErrorCodes[errorcode])
 });
 
-function openConceptboardUrl(){
-    var boardURL = document.getElementById("boardLink").value;
-    console.log(boardURL);
-    sessionStorage.setItem("board_url", boardURL);
-    window.location.href = 'index_frame.html';
-}
+
 
 // Button click handler to set share URL
 function handleSetShare() {
