@@ -8,7 +8,11 @@ app.onReady().then(() => {
     log("Error with code: ", Webex.Application.ErrorCodes[errorcode])
 });
 
-
+function openTeamSpace() {
+    app.openUrlInSystemBrowser("https://app.conceptboard.com/embedded/config/msteams?embed=msteams").catch((errorcode) => {
+      console.log("Error: ", window.Webex.Application.ErrorCodes[errorcode]);
+    })
+ }
 
 
 // Button click handler to set share URL
