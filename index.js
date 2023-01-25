@@ -4,15 +4,15 @@ var app = new window.Webex.Application();
 // Wait for onReady() promise to fulfill before using framework
 app.onReady().then(() => {
     log("App ready. Instance", app);
+    console.log(app.context);
+    if (app.isShared) {
+        document.getElementById("footer").style.display = "none";
+    }
 }).catch((errorcode) =>  {
     log("Error with code: ", Webex.Application.ErrorCodes[errorcode])
 });
 
-function openTeamSpace() {
-    app.openUrlInSystemBrowser("https://app.conceptboard.com/embedded/config/msteams?embed=msteams").catch((errorcode) => {
-      console.log("Error: ", window.Webex.Application.ErrorCodes[errorcode]);
-    })
- }
+
 
 
 // Button click handler to set share URL

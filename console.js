@@ -44,9 +44,6 @@ console.warn = function(){
 //    console.log(value);
 //  });
 
-document.getElementById("conceptboard_iframe").onload = function(event) {
-   console.log(event);
-};
 
 function printLoggs(logs) {
     

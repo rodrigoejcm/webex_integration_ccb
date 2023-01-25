@@ -6,7 +6,9 @@
 <head>
   <title>Conceptboard</title>
   <link rel="stylesheet" href="style.css">
+  <script src="./console.js" defer></script>
   <script src="https://binaries.webex.com/static-content-pipeline/webex-embedded-app/v1/webex-embedded-app-sdk.js" defer></script>
+ 
   <script src="./index.js" defer></script>
   
 </head>
@@ -16,9 +18,12 @@
 
 </iframe>
   
-<div class="footer">
-  <input type="button" value="Open Board" onclick="handleSetShare()"/>
+<div class="footer" id="footer"> 
+  <input type="button" value="Share Board" onclick="handleSetShare()"/>
 </div>
+<ul id="logs">
+
+</ul>
    
 </body>
 </html>
